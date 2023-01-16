@@ -18,12 +18,31 @@
   
 }
 
+
 h2{
     font-family: arial, sans-serif;
     font-size: 18px;
     color: rgb(18, 77, 116);
 }
+
+h3{ font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+     }
   
+.baner {
+  background-image: url("https://img.cas.sk/cas/900px/1599603.jpg/herec-pelisky-miroslav-donutil.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: 'Courier New', Courier, monospace; 
+    color: white;
+    
+
+  }
   
   nav div {
     display: inline-block;
@@ -65,6 +84,30 @@ h2{
     border: solid 1px black;
   }
 
+  .button1 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
   
 </style>
 
@@ -79,26 +122,18 @@ h2{
       <h1 id="prvy">Filmy, čo mám rád</h1>
     <!-- Teraz bude nasledovať zoznam filmov -->
     
-    <h2>Titanic</h2>
-    <p>Zaujímam sa o históriu tejto tragédie a v <a href="https://www.csfd.sk/film/1250-titanic/prehlad/">tomto filme</a> to bolo dobre vykreslené.</p>
+    <div class="baner">
+    <h3>Pelíšky</h3>
+    <p>V súkromí rodinných „pelíškov“ sa odohrávajú malé drámy názorov a vzťahov, ktorým nechýba humor, rozprávačská elegancia, dobre vypointované situácie a vynikajúci dialóg... </p>
     <p><b>Herci</b></p>
-    <ul class="prvy">
-      <li>Leonardo DiCaprio</li>
-      <li>Kate Winslet</li>
-      <li>Billy Zane</li>
-    </ul>
-    
-
-    <p>&nbsp;</p>
-    <h2>Pelíšky</h2>
-    <p>Česká klasika, ktorá ma vždy pobaví satirickým pohľadom na minulú dobu. </p>
-    <p><b>Herci</b></p>
-    <ul class="druhy">
+    <ul class="druhy" style="color: white">
       <li>Miroslav Donutil</li>
       <li>Jiří Kodet</li>
       <li>Eva Holubová</li>
     </ul>
-    <iframe width="600" height="300" src="https://www.youtube.com/embed/CwQOncE8O6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <a href="pelisky.html" class="button1 button2">Detail filmu</a>
+      </div>
+
     <p>&nbsp;</p>
     <h2>Hľadá sa Nemo</h2>
     <p>Vo všeobecnosti som fanúšik animákov od Pixaru a tento je pre mňa jeden z top.</p>
@@ -114,6 +149,16 @@ h2{
       <polygon points="370,150 490,50 490,250" fill="orange"/>
 
     </svg>
+
+    <p>&nbsp;</p>
+    <h2>Titanic</h2>
+    <p>Zaujímam sa o históriu tejto tragédie a v <a href="https://www.csfd.sk/film/1250-titanic/prehlad/">tomto filme</a> to bolo dobre vykreslené.</p>
+    <p><b>Herci</b></p>
+    <ul class="prvy">
+      <li>Leonardo DiCaprio</li>
+      <li>Kate Winslet</li>
+      <li>Billy Zane</li>
+    </ul>
       
  
 
