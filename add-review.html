@@ -14,6 +14,94 @@
   display: inline-block;
   font-size: 16px;
 }
+
+.zelenyStvorec {
+  border: 15px solid green;
+  background-color: white;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 1100px;
+  left: 100px;
+  z-index: 1;
+}
+
+.oranzovyStvorec {
+  border: 15px solid orange;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 1150px;
+  left: 50px;
+  z-index: 2;
+}
+
+.modryStvorec {
+  border: 15px solid blue;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 1150px;
+  left: 100px;
+  z-index: 3;
+}
+
+.cervenyStvorec {
+  border: 15px solid red;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 1100px;
+  left: 50px;
+  z-index: 4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-1 {
+  padding: 10px;
+  flex: 33%;
+  background-color: rgb(18, 77, 116); 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.flex-item-2 {
+  padding: 10px;
+  flex: 33%;
+  background-color: rgb(18, 77, 116); 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.flex-item-3 {
+  padding: 10px;
+  flex: 33%;
+  background-color: rgb(18, 77, 116); 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+@media (max-width: 500px) {
+  .flex-item-1, .flex-item-2, .flex-item-3 {
+    flex: 100%;
+  }
+}
+
 .formbutton {
   background-color: white; 
   color: black; 
@@ -93,10 +181,14 @@ textarea {
 
     </style>
 </head>
+
 <body>
-  <a href="index.html" class="button">Domov</a>
-  <a href="filmy.html" class="button">Top filmy podľa ČSFD</a>
-  <a href="add-review.html" class="button">Pridať recenziu</a>
+
+  <div class="flex-container">
+    <div class="flex-item-1"><a href="index.html" class="button">Domov</a></div>
+    <div class="flex-item-2"><a href="filmy.html" class="button">Top filmy podľa ČSFD</a></div>
+    <div class="flex-item-3"><a href="add-review.html" class="button">Pridať recenziu</a></div>
+  </div>
     <h1>Pridať recenziu</h1>
     
   <form action="" target="_parent" method="get" autocomplete="on">
@@ -114,7 +206,7 @@ textarea {
     </textarea>
 
     <p>Kedy si film naposledy videl?</p>
-    <input type="date" name="datum" id="">
+    <input type="date" name="datum" id="date">
 
     <p>Tvoje hodnotenie filmu (od 0 do 100)</p>
     <input type="range" name="hodnotenie" id="hodnotenie">
@@ -142,5 +234,16 @@ textarea {
    <input type="submit" value="Pridať" class="formbutton">
 
   </form>
-  </body>
+
+      <div class="zelenyStvorec">
+      </div> 
+      <div class="oranzovyStvorec">
+      </div> 
+      <div class="modryStvorec">
+      </div> 
+      <div class="cervenyStvorec">
+      </div> 
+
+  
+    </body>
 </html>
